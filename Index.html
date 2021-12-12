@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Muebles</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
 </head>
 <body>
@@ -36,17 +38,18 @@
         <h2 class="text-center">Categorias de Producto</h2>
 
         <div class="listado-categorias">
-            <div class="categoria">
+            <div class="categoria" data-aos="zoom-in-right">
             <img src="Img/categoria1.jpg" alt="Imagen Categoría1">
             <a href="">Oficina</a>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" data-aos="fade-up"
+        data-aos-duration="300">
             <img src="img/categoria2.jpg" alt="Imagen Categoría2">
             <a href="">Hogar</a>
         </div>
 
-        <div class="categoria">
+        <div class="categoria" data-aos="zoom-in-left">
             <img src="img/categoria3.jpg" alt="Imagen Categoría3">
             <a href="">Cocina</a>
         </div>
@@ -68,7 +71,7 @@
         <h2 class="text-center">Nuestros Productos</h2>
 
         <div class="listado-productos">
-            <div class="producto">
+            <div class="producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="img/producto1.jpg" alt="Imagen Producto1">
                 <div class="texto-producto">
                     <h3>Producto 1</h3>
@@ -78,7 +81,7 @@
                 </div><!-- Info Producto -->
             </div><!-- Producto -->
 
-            <div class="producto">
+            <div class="producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="img/producto2.jpg" alt="Imagen Producto2">
                 <div class="texto-producto">
                     <h3>Producto 2</h3>
@@ -88,7 +91,7 @@
                 </div><!-- Info Producto -->
             </div><!-- Producto -->
 
-            <div class="producto">
+            <div class="producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="img/producto3.jpg" alt="Imagen Producto3">
                 <div class="texto-producto">
                     <h3>Producto 3</h3>
@@ -98,7 +101,7 @@
                 </div><!-- Info Producto -->
             </div><!-- Producto -->
 
-            <div class="producto">
+            <div class="producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="img/producto4.jpg" alt="Imagen Producto4">
                 <div class="texto-producto">
                     <h3>Producto 4</h3>
@@ -108,7 +111,7 @@
                 </div><!-- Info Producto -->
             </div><!-- Producto -->
 
-            <div class="producto">
+            <div class="producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="img/producto5.jpg" alt="Imagen Producto5">
                 <div class="texto-producto">
                     <h3>Producto 5</h3>
@@ -118,7 +121,7 @@
                 </div><!-- Info Producto -->
             </div><!-- Producto -->
 
-            <div class="producto">
+            <div class="producto" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <img src="img/producto6.jpg" alt="Imagen Producto6">
                 <div class="texto-producto">
                     <h3>Producto 6</h3>
@@ -172,6 +175,10 @@
         </div>
         <p class="copyright">Todos los derechos Reservados, TiendaMuebles</p>
     </footer>
-    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
